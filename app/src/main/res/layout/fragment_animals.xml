@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cor_background_animal"
+    tools:context=".fragments.AnimalsFragment">
+
+    <ImageButton
+        android:id="@+id/btCachorro"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00635A5A"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cao"
+        app:layout_constraintBottom_toTopOf="@+id/btLeao"
+        app:layout_constraintEnd_toStartOf="@+id/btGato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btGato"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00807272"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gato"
+        app:layout_constraintBottom_toTopOf="@+id/btMacaco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btCachorro"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btLeao"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00807272"
+        android:scaleType="centerCrop"
+        android:src="@drawable/leao"
+        app:layout_constraintBottom_toTopOf="@+id/btOvelha"
+        app:layout_constraintEnd_toStartOf="@+id/btMacaco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCachorro" />
+
+    <ImageButton
+        android:id="@+id/btMacaco"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00807272"
+        android:scaleType="centerCrop"
+        android:src="@drawable/macaco"
+        app:layout_constraintBottom_toTopOf="@+id/btVaca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btLeao"
+        app:layout_constraintTop_toBottomOf="@+id/btGato" />
+
+    <ImageButton
+        android:id="@+id/btOvelha"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00807272"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ovelha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btVaca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLeao" />
+
+    <ImageButton
+        android:id="@+id/btVaca"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00807272"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vaca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btOvelha"
+        app:layout_constraintTop_toBottomOf="@+id/btMacaco" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
